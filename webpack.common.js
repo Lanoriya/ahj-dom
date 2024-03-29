@@ -1,8 +1,8 @@
-import path from "path";
-import HtmlWebPackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-export default {
+module.exports = {
   target: "web",
   output: {
     path: path.resolve(__dirname, "dist"),
