@@ -1,10 +1,10 @@
-import Icon from './goblin.png';
+import Icon from "./goblin.png";
 
-let cells = document.querySelectorAll('.cell')
-let img = document.createElement('img');
+let cells = document.querySelectorAll(".cell");
+let img = document.createElement("img");
 
-img.src = Icon
-img.classList.add('goblin')
+img.src = Icon;
+img.classList.add("goblin");
 
 let prevCellIndex = -1;
 setInterval(() => {
@@ -12,7 +12,7 @@ setInterval(() => {
   do {
     cellsRandom = Math.floor(Math.random() * cells.length);
   } while (cellsRandom === prevCellIndex);
-  
+
   prevCellIndex = cellsRandom;
-  cells[cellsRandom].appendChild(img)
+  cells[cellsRandom].appendChild(img);
 }, 1000);
